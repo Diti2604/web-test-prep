@@ -36,7 +36,7 @@ echo "operation3 called";
 }
 class B extends A{
 function __construct(){
-$this->operation1();
+// $this->operation1();
 $this->operation2();
 $this->operation3();
 }}
