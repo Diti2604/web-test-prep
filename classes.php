@@ -1,5 +1,4 @@
 <?
-
 // class B extends A{
 //     public $param2;
 //     function operation2(){
