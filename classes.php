@@ -1,17 +1,47 @@
-<?php
+<?
 
-class something{
-    function operation1(){
-return "smth";
-    }
-    function operation2($param1, $param2){
-return $param1 . $param2;
-    }
+// class B extends A{
+//     public $param2;
+//     function operation2(){
+
+//     }
+// }
+
+// class A{
+//     public $param1;
+//     function operation1(){
+// return "smth";
+//     }
+// }
+
+
+// $b = new B();
+// $a = new A();
+// $b -> param1 = 10;
+// $b -> operation1();
+
+
+class A{
+private function operation1(){
+echo "operation1 called";
 }
 
-$a = new something();
-$a -> operation1();
-$a -> operation2(12,"test");
-$x = $a -> operation1();
-$y = $a -> operation2(12,"test");
+protected function operation2(){
+echo "operation2 called";
+}
+public function operation3(){
+echo "operation3 called";
+}
+
+}
+class B extends A{
+function __construct(){
+$this->operation1();
+$this->operation2();
+$this->operation3();
+}}
+
+$b = new B;
+$b -> operation3();
+
 ?>
