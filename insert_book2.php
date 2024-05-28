@@ -37,8 +37,6 @@
     echo 'Error adding book. please try again';
  }
  $db -> close();
-    
     ?>
 </body>
-
 </html>

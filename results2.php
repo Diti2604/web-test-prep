@@ -10,7 +10,7 @@
 <body>
     <h1>Book-O-Rama Search Results</h1>
     <?php
-       $searchtype = $_POST['searchtype'];
+    $searchtype = $_POST['searchtype'];
     $searchterm = trim($_POST['searchterm']);
     if (!$searchterm || !$searchtype) {
         echo '<p>You have not entered search details.</p>';
