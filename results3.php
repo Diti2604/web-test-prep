@@ -23,7 +23,7 @@ switch ($searchtype) {
     case 'ISBN':
         break;
     default:
-        echo '<p>NOt a valid search type. Please go back and try again</p>';
+        echo '<p>Not a valid search type. Please go back and try again</p>';
         exit;
 }
 
